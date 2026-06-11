@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCollection Manager - Hot Wheels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏎️ Minha Coleção Hot Wheels</h1>
+
+        <div class="painel">
+            <div class="estatistica">
+                <h3>Total de Hot Wheels</h3>
+                <p id="totalItens">0</p>
+            </div>
+
+            <div class="estatistica">
+                <h3>Total de Repetidos</h3>
+                <p id="totalRepetidos">0</p>
+            </div>
+
+            <div class="estatistica">
+                <h3>Itens Únicos</h3>
+                <p id="itensUnicos">0</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="formulario">
+        <h2>Adicionar Hot Wheels</h2>
+
+        <input type="text" id="nome" placeholder="Nome do carro">
+
+        <input type="url" id="imagem" placeholder="URL da imagem">
+
+        <select id="serie">
+            <option value="Mainline">Mainline</option>
+            <option value="Premium">Premium</option>
+            <option value="Treasure Hunt">Treasure Hunt</option>
+            <option value="Super Treasure Hunt">Super Treasure Hunt</option>
+        </select>
+
+        <label class="checkbox">
+            <input type="checkbox" id="repetido">
+            Carro Repetido
+        </label>
+
+        <button id="adicionar">Adicionar à Coleção</button>
+    </section>
+
+    <section class="busca">
+        <input type="text" id="pesquisa" placeholder="🔍 Pesquisar Hot Wheels...">
+    </section>
+
+    <section id="colecao" class="colecao"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
